@@ -6,13 +6,12 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView12"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Nome:" />
 
     <EditText
-        android:id="@+id/editText13"
+        android:id="@+id/activity_cadastro_usuarios_nome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -20,13 +19,12 @@
         android:text="Nome" />
 
     <TextView
-        android:id="@+id/textView13"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="E-mail:" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/activity_cadastro_usuarios_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -34,13 +32,12 @@
         android:text="E-mail" />
 
     <TextView
-        android:id="@+id/textView14"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Senha:" />
 
     <EditText
-        android:id="@+id/editText9"
+        android:id="@+id/activity_cadastro_usuarios_senha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -48,13 +45,12 @@
         android:text="Senha" />
 
     <TextView
-        android:id="@+id/lblCPFUsuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="CPF:" />
 
     <EditText
-        android:id="@+id/txtCPFUsuario"
+        android:id="@+id/activity_cadastro_usuarios_cpf"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -62,13 +58,12 @@
         android:text="000.000.000-00" />
 
     <TextView
-        android:id="@+id/lblTelefoneusuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Telefone:" />
 
     <EditText
-        android:id="@+id/txtTelefoneUsuario"
+        android:id="@+id/activity_cadastro_usuarios_telefone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -76,18 +71,32 @@
         android:text="( )    -" />
 
     <TextView
-        android:id="@+id/textView15"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Endereço:" />
 
     <android.support.v7.widget.RecyclerView
+        android:id="@+id/activity_cadastro_usuarios_recViewEndereco"
         android:layout_width="match_parent"
-        android:layout_height="124dp" />
+        android:layout_height="wrap_content" />
 
-    <Button
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SALVAR" />
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/activity_cadastro_usuarios_botao_editar"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:text="EDITAR" />
+
+        <Button
+            android:id="@+id/activity_cadastro_usuarios_botao_salvar"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:text="SALVAR" />
+    </LinearLayout>
 
 </LinearLayout>
