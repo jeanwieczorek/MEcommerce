@@ -1,7 +1,9 @@
-package com.example.jcwieczorek.mecommerce;
+package com.example.jcwieczorek.mecommerce.views;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.jcwieczorek.mecommerce.R;
 
 public class Login extends AppCompatActivity {
 
