@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="all">
+
+        <item
+            android:id="@+id/menu_inicial"
+            android:title="Home">
+        </item>
+
+        <item android:id="@+id/menu_usuario"
+            android:title="Usuario">
+        </item>
+
+        <item android:id="@+id/menu_pedido"
+            android:title="Pedido">
+        </item>
+
+        <item android:id="@+id/menu_endereco"
+            android:title="Enderecos">
+        </item>
+
+        <item android:id="@+id/menu_carrinho"
+            android:title="Carrinho">
+        </item>
+
+        <item android:id="@+id/menu_sair"
+            android:title="Sair">
+        </item>
+
+    </group>
+
+</menu>
