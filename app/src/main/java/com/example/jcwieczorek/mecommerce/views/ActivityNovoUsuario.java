@@ -45,4 +45,7 @@ public class ActivityNovoUsuario extends ActivityAbstract {
         this.editar = (Button) findViewById(R.id.activity_cadastro_usuarios_botao_editar);
         this.salvar = (Button) findViewById(R.id.activity_cadastro_usuarios_botao_salvar);
     }
+
+
+
 }

@@ -12,19 +12,19 @@ import com.example.jcwieczorek.mecommerce.interfaces.IItemClickListener;
  * Created by jcwieczorek on 08/11/17.
  */
 
-public class HolderListagemUsuarios extends RecyclerView.ViewHolder implements View.OnClickListener {
+public class HolderListagemPedidosProdutos extends RecyclerView.ViewHolder implements View.OnClickListener {
 
+    final ImageView imagem;
     final TextView nome;
-    final TextView cpf;
-    final TextView email;
+    final TextView preco;
     private IItemClickListener clickListener;
 
 
-    public HolderListagemUsuarios(View itemView) {
+    public HolderListagemPedidosProdutos(View itemView) {
         super(itemView);
-        this.nome = (TextView) itemView.findViewById(R.id.componente_listagem_usuario_nome);
-        this.cpf = (TextView) itemView.findViewById(R.id.componente_listagem_usuario_cpf);
-        this.email = (TextView) itemView.findViewById(R.id.componente_listagem_usuario_email);
+        this.imagem = (ImageView) itemView.findViewById(R.id.componente_listagem_produto_item_imagem);
+        this.nome = (TextView) itemView.findViewById(R.id.componente_listagem_produto_item_produto);
+        this.preco = (TextView) itemView.findViewById(R.id.componente_listagem_produto_item_preco);
         this.clickListener = clickListener;
         itemView.setOnClickListener(this);
     }

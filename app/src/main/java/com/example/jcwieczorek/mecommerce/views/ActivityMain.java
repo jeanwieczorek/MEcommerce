@@ -108,8 +108,8 @@ public class ActivityMain extends ActivityAbstract implements NavigationView.OnN
                 textView.setText("Pedidos");
                 break;
 
-            case R.id.menu_usuario:
-                fragment = new FragmentListagemUsuarios();
+           case R.id.menu_usuario:
+                fragment = new FragmentUsuario();
                 textView.setText("Usuarios");
                 break;
 
