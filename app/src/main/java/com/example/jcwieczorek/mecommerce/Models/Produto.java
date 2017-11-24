@@ -1,5 +1,7 @@
 package com.example.jcwieczorek.mecommerce.Models;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.io.Serializable;
 import java.util.UUID;
 
@@ -8,6 +10,9 @@ import java.util.UUID;
  */
 
 public class Produto implements Serializable{
+
+    @JsonProperty("logradouro")
+    private String logradouro;
 
     private UUID id;
     private String nomeProduto;

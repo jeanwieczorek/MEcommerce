@@ -2,7 +2,7 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="130dp"
+    android:layout_height="165dp"
     android:orientation="horizontal">
 
     <LinearLayout
@@ -11,16 +11,25 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/componente_listagem_endereco_nome"
+            android:id="@+id/componente_listagem_endereco_logradouro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nome Endereço"
-            android:textSize="25dp"
+            android:text="Logradouro"
+            android:textSize="20dp"
             android:textColor="@android:color/holo_blue_dark"/>
 
 
         <TextView
-            android:id="@+id/componente_listagem_endereco_rua"
+            android:id="@+id/componente_listagem_endereco_numero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nro"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"/>
+
+
+        <TextView
+            android:id="@+id/componente_listagem_endereco_complemento"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Rua"
@@ -42,6 +51,15 @@
             android:layout_height="wrap_content"
             android:textColor="@android:color/black"
             android:text="Cidade"
+            android:textSize="20dp"/>
+
+
+        <TextView
+            android:id="@+id/componente_listagem_endereco_estado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Estado"
             android:textSize="20dp"/>
 
     </LinearLayout>

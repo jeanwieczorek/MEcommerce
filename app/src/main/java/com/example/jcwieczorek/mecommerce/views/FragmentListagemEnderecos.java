@@ -48,9 +48,8 @@ public class FragmentListagemEnderecos extends Fragment {
         recyclerView.setLayoutManager(layoutManager);
 
         List<Endereco> enderecos = new ArrayList<>();
-        enderecos.add(new Endereco("Casa","Rua São Paulo, 1020" , "Navegantes", "Porto Alegre"));
-        enderecos.add(new Endereco("Escritório","Rua Julio de Castilhos, 1100" , "Centro", "Caxias do Sul"));
-        enderecos.add(new Endereco("Praia","Rua Golfinhos, 55" , "Marés", "Florianópolis"));
+        enderecos.add(new Endereco("Rua São Paulo","1020" , "Proximo Shopping", "Navegantes" , "Porto Alegre", "RS"));
+        enderecos.add(new Endereco("Rua Julio de Castilhos","180" , "", "Centro" , "Caxias do Sul", "RS"));
 
         this.adapterListagemEnderecos = new AdapterListagemEnderecos(enderecos, getActivity());
 

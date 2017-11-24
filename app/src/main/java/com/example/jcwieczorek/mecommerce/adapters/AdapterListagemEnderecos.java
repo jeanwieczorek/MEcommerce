@@ -42,10 +42,12 @@ public class AdapterListagemEnderecos extends RecyclerView.Adapter<HolderListage
         Endereco endereco = enderecos.get(position);
 
         //TODO holder.imagem.setImageDrawable();
-        holder.nome.setText(endereco.getNome().toString());
-        holder.rua.setText(endereco.getRua().toString());
+        holder.logradouro.setText(endereco.getLogradouro().toString());
+        holder.numero.setText(endereco.getNumero().toString());
+        holder.complemento.setText(endereco.getComplemento().toString());
         holder.bairro.setText(endereco.getBairro().toString());
         holder.cidade.setText(endereco.getCidade().toString());
+        holder.estado.setText(endereco.getEstado().toString());
         holder.setClickListener(this);
 
     }

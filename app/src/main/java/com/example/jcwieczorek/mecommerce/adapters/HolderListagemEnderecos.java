@@ -13,19 +13,23 @@ import com.example.jcwieczorek.mecommerce.interfaces.IItemClickListener;
 
 public class HolderListagemEnderecos extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-    final TextView nome;
-    final TextView rua;
+    final TextView logradouro;
+    final TextView numero;
+    final TextView complemento;
     final TextView bairro;
     final TextView cidade;
+    final TextView estado;
     private IItemClickListener clickListener;
 
 
     public HolderListagemEnderecos(View itemView) {
         super(itemView);
-        this.nome = (TextView) itemView.findViewById(R.id.componente_listagem_endereco_nome);
-        this.rua = (TextView) itemView.findViewById(R.id.componente_listagem_endereco_rua);
+        this.logradouro = (TextView) itemView.findViewById(R.id.componente_listagem_endereco_logradouro);
+        this.numero = (TextView) itemView.findViewById(R.id.componente_listagem_endereco_numero);
+        this.complemento = (TextView) itemView.findViewById(R.id.componente_listagem_endereco_complemento);
         this.bairro = (TextView) itemView.findViewById(R.id.componente_listagem_endereco_bairro);
         this.cidade = (TextView) itemView.findViewById(R.id.componente_listagem_endereco_cidade);
+        this.estado = (TextView) itemView.findViewById(R.id.componente_listagem_endereco_estado);
         this.clickListener = clickListener;
         itemView.setOnClickListener(this);
     }

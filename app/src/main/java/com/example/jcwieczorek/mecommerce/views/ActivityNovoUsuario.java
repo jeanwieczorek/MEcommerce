@@ -42,7 +42,7 @@ public class ActivityNovoUsuario extends ActivityAbstract {
         this.cpf = (EditText) findViewById(R.id.activity_cadastro_usuarios_cpf);
         this.telefone = (EditText) findViewById(R.id.activity_cadastro_usuarios_telefone);
         this.listaEnderecos = (RecyclerView) findViewById(R.id.activity_cadastro_usuarios_recViewEndereco);
-        this.editar = (Button) findViewById(R.id.activity_cadastro_usuarios_botao_editar);
+        this.editar = (Button) findViewById(R.id.activity_cadastro_usuarios_botao_endereco);
         this.salvar = (Button) findViewById(R.id.activity_cadastro_usuarios_botao_salvar);
     }
 

@@ -3,46 +3,22 @@ package com.example.jcwieczorek.mecommerce.Models;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import java.io.Serializable;
-import java.util.UUID;
-
 /**
- * Created by jcwieczorek on 08/11/17.
+ * Created by jcwieczorek on 23/11/2017.
  */
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Endereco implements Serializable {
+public class EnderecoResponse {
 
-    @JsonProperty("logradouro")
     private String logradouro;
-
-    @JsonProperty("numero")
     private String numero;
-
-    @JsonProperty("complemento")
     private String complemento;
-
-    @JsonProperty("bairro")
     private String bairro;
-
-    @JsonProperty("cidade")
     private String cidade;
-
-    @JsonProperty("estado")
     private String estado;
+    private Long id;
 
-    public Endereco(String logradouro, String numero, String complemento, String bairro, String cidade, String estado) {
-        this.logradouro = logradouro;
-        this.numero = numero;
-        this.complemento = complemento;
-        this.bairro = bairro;
-        this.cidade = cidade;
-        this.estado = estado;
-    }
-
-    public String getLogradouro() {
-        return logradouro;
-    }
+    public String getLogradouro() { return logradouro; }
 
     public void setLogradouro(String logradouro) {
         this.logradouro = logradouro;
@@ -88,6 +64,3 @@ public class Endereco implements Serializable {
         this.estado = estado;
     }
 }
-
-
-

@@ -14,6 +14,13 @@ import java.util.UUID;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Pedido implements Serializable{
 
+  /*  	"idEnderecoUsuario":1,
+                "cartaoCredito":"123456789",
+                "validadeCartaoCredito":"1023",
+                "codigoSeguranca":"123",
+                "produtos" : [2]
+
+*/
     @JsonProperty("title")
     private UUID id;
 
